@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para la galería de imágenes */
+.gallery {
+    display: flex; /* Utiliza el modelo de caja flexible para alinear las imágenes */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px; /* Espacio interno alrededor de la galería */
+}
+
+/* Estilo para cada imagen */
+.cat-image {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados para un aspecto más estético */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+}
