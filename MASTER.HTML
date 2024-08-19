@@ -1,0 +1,47 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistente Virtual de Metel - Eva</title>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Asistente Virtual de Metel - Eva</h1>
+        <button onclick="showMenu()">Iniciar Asistente</button>
+    </div>
+</body>
+<SCRipt>
+
+    function showMenu() {
+       const menu = `
+           1. Boletas y pagos
+           2. Señal y llamada
+           3. Oferta comercial
+           4. Otras consultas
+           \nPor favor, ingrese el número de la opción deseada:`;
+   
+       const choice = prompt(menu);
+   
+       switch (choice) {
+           case '1':
+               handleBoletasYPagos();
+               break;
+           case '2':
+               handleSenalYLlamada();
+               break;
+           case '3':
+               handleOfertaComercial();
+               break;
+           case '4':
+               handleOtrasConsultas();
+               break;
+           default:
+               alert('Opción no válida. Por favor, seleccione una opción del 1 al 4.');
+               break;
+       }
+   }
+ 
+</script>
+</body>
+</html>
